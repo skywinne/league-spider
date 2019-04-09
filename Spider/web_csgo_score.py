@@ -159,6 +159,7 @@ class CsSpider(object):
                 "results": dic["results"],
             }
             self.save_data_to_json("csgo_detail", detail_datas)
+            print("list_queue==>{}".format(self.list_queue.qsize()))
             self.list_queue.task_done()
 
     # 保存赛事信息到json
@@ -181,9 +182,9 @@ class CsSpider(object):
             self.pool.apply_async(task)
 
     def run(self):
-        self.execute_task(self.add_url_to_queue, 5)
-        self.execute_task(self.add_list_to_queue, 5)
-        self.execute_task(self.get_detail_from_list, 5)
+        self.execute_task(self.add_url_to_queue)
+        self.execute_task(self.add_list_to_queue)
+        self.execute_task(self.get_detail_from_list)
 
         # 让主线稍微睡一下, 分配时间给子线程执行, 防止还没有执行就结束了!!!
         time.sleep(5)

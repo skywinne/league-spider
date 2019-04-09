@@ -1,11 +1,17 @@
+#!/usr/bin/python
+# -*- coding:utf-8 -*-
+# author: dsc1697
+# CreateTime: 2019/3/19
+# software-version: python 3.7
+
 
 import json
 import requests
-from queue import Queue
 from multiprocessing.dummy import Pool
 import time
 
 from middlewares import Middlewares
+from scheduler import Scheduler
 from config import logger
 
 
@@ -18,31 +24,25 @@ class ScoreSpider(object):
         # 初始化中间件
         self.middlewares = Middlewares()
         # 初始化四个队列
-        self.url_queue = Queue()
-        self.list_queue = Queue()
+        self.url_queue = Scheduler()
+        self.list_queue = Scheduler()
         # 初始化线程池
         self.pool = Pool(5)
-        # 记录页数
-        self.url_count = 1
         # 记录局数
         self.ju = 1
 
     def add_url_to_queue(self):
         """添加url进queue"""
-        while True:
-            url = self.url.format(self.url_count)
-            self.url_count += 1
-            # 判断页面是否有内容，没有内容不再加入url_queue
-            if len(self.middlewares.retry_request(url)["list"]) == 0:
-                break
-            self.url_queue.put(url)
+        for url_count in range(1, 5):
+            url = self.url.format(url_count)
+            self.url_queue.add_request(url)
             logger.info("<{}> put url_queue success!".format(url))
 
     def add_list_to_queue(self):
         """拿到json数据"""
         while True:
             # 从url_queue中取出url，得到list页面
-            url = self.url_queue.get()
+            url = self.url_queue.get_data()
             # 发送请求，获取响应
             dic = self.middlewares.retry_request(url)
             # 取出其中的list列表
@@ -95,7 +95,7 @@ class ScoreSpider(object):
                         "matchs_id": content["dota2_matches"]
                     }
                 # 将list数据添加入list_queue
-                self.list_queue.put(list_data)
+                self.list_queue.add_data(list_data)
             # 完成该url的任务
             self.url_queue.task_done()
 
@@ -121,7 +121,7 @@ class ScoreSpider(object):
         """"详情页数据解析"""
         while True:
             # 取出list数据
-            datas = self.list_queue.get()
+            datas = self.list_queue.get_data()
             self.save_content_to_json("daota2_score_list", datas)
             logger.info("list data <{}> save success!".format(datas["cname"]))
             # 取出matchs_id
@@ -217,9 +217,9 @@ class ScoreSpider(object):
 
     def run(self):
 
-        self.execute_task(self.add_url_to_queue, 3)
-        self.execute_task(self.add_list_to_queue, 5)
-        self.execute_task(self.get_content_from_detail, 5)
+        self.execute_task(self.add_url_to_queue)
+        self.execute_task(self.add_list_to_queue)
+        self.execute_task(self.get_content_from_detail)
 
         # 让主线稍微睡一下, 分配时间给子线程执行, 防止还没有执行就结束了!!!
         time.sleep(5)

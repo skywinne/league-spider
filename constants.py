@@ -1,6 +1,15 @@
 # ip代理中间件地址
 PROXY_POOL_URL = 'http://47.107.158.70:5555/random'
 
+# 如果是False, 不使用redis队列，会使用python的set存储指纹和请求
+SCHEDULER_PERSIST = False
+
+# 指纹是否持久化
+# 默认为True 即持久化请求对象的指纹,达到断点续爬的目的
+# 如果为False,则在爬虫结束的时候清空指纹库
+# 可以在项目的settings.py中重新赋值进行覆盖
+FP_PERSIST = True
+
 # ***************************
 # HEADERS 常量
 # ***************************
@@ -56,3 +65,15 @@ MYSQL_PORT = 3306
 # *************************
 # 端口号
 MONGODB_PORT = 27017
+
+# *************************
+# Redis 数据库配置
+# *************************
+# 队列名称
+REDIS_QUEUE_NAME = 'league_url_list'
+# 去重容器名称
+REDIS_SET_NAME = 'league_fp_set'
+# Redis端口
+REDIS_PORT = 6379
+# Redis数据库
+REDIS_DB = 1

@@ -1,0 +1,191 @@
+2019-04-09 17:07:20,703 - web_dota2_score.py[line:39] - INFO: <http://www.1zplay.com/api/schedules?category=dota2&leagues=5c864ec22fd72b55d45bec79&leagues=5c7fc2732fd72b55d45bec16&leagues=5c7f0a572fd72b55d45bec0d&leagues=5c6df5352fd72b55d45beba7&leagues=5c7524b32fd72b55d45bebb9&leagues=5c7510472fd72b55d45bebb3&leagues=5c2b8ea543f6b0500d93cd28&leagues=5c2b8fd343f6b0500d93cd29&leagues=5c4d31252fd72b55d45bea97&leagues=5c2b8ccd43f6b0500d93cd27&leagues=5c2b89ae43f6b0500d93cd26&leagues=5c34228543f6b0500d93cd5d&leagues=5c2b93fb43f6b0500d93cd2e&leagues=5c29993d43f6b0500d93cd23&leagues=5c22f00943f6b0500d93ccf9&leagues=5c206e2143f6b0500d93cce6&leagues=5c1db3e743f6b0500d93ccdf&leagues=5c18bb5643f6b0500d93cccd&leagues=5c11ec1b43f6b0500d93ccb9&leagues=5c109c7b43f6b0500d93cca4&leagues=5c0bb60943f6b0500d93cc8a&leagues=5c035fa543f6b0500d93cc03&leagues=5bf7e3d343f6b0500d93cb5d&leagues=5bf5345c43f6b0500d93cb48&leagues=5beb049d43f6b0500d93cafd&leagues=5bf3999243f6b0500d93cb22&leagues=5be3ab4e43f6b0500d93caed&leagues=5bd6610f43f6b0500d93cabf&leagues=5be3763643f6b0500d93cae9&leagues=5bccb6bb4df3e6586392220a&leagues=5bce485d94d802261e19d1a0&leagues=5bc7be1b4df3e658639221d5&leagues=5bc457274df3e65863922199&leagues=5bc29ce74df3e65863922183&leagues=5bbd654d4df3e65863922175&leagues=5bba67314df3e65863922168&leagues=5bc4d14d4df3e658639221bb&leagues=5bb280364df3e65863922137&leagues=5bb19d567f54e1073e225d53&leagues=5bac55f87f54e1073e225cdb&leagues=5bac53d87f54e1073e225cda&leagues=5bae48f47f54e1073e225d05&leagues=5ba846eb7f54e1073e225cbb&leagues=5b9a15dfce11f15aa1c4242a&leagues=5b8d3a87ce11f15aa1c42418&leagues=5b557e1e5b7fbe042094b9fa&leagues=5b63ee6c3cc11326453526f5&leagues=5b62b9473cc11326453526f0&leagues=5b52e6135b7fbe042094b9f5&leagues=5b3cc75914f6b42a273bb6a6&leagues=5b35fa8014f6b42a273bb689&leagues=5b2728267eec3c4f6a380484&leagues=5b03d5f086b7d72865fe5aa7&leagues=5af6e3ce86b7d72865fe5a5d&leagues=5adcadd3ef81f73dd1744154&leagues=5aef2c5def81f73dd17441af&leagues=5a85b4db92abd971ffdb028b&leagues=5ad5e38eef81f73dd17440ed&leagues=5ad412802461157a983c4f36&leagues=5ac496512461157a983c4eeb&leagues=5ac98c012461157a983c4f10&leagues=5a85b73592abd971ffdb0291&leagues=5a85b0b192abd971ffdb0284&leagues=5aafc89ae6aa9371f2dba5ec&leagues=5a85b5c192abd971ffdb028c&leagues=5aa92d51c6854126efc08866&leagues=5aa6a4f8a08c69431b78a2a7&leagues=5a94c47c8f736d6cc624ed78&leagues=5aa5ffbba08c69431b78a2a5&leagues=5a85b86892abd971ffdb0292&leagues=5a9a0ea5181e6c31c29a0262&leagues=5a97caf59ae79f6cddd8c4bc&leagues=5a38e519f75edf444c5af963&leagues=5a7e68a90828146fe8a40390&leagues=5a5d66a169a0744a0ce16180&leagues=5a66bd82f80e3b5cfcb0d46b&leagues=5a66bfd6f80e3b5cfcb0d474&leagues=5a3a1f98b18c6d2a2471e388&leagues=5a3a2008b18c6d2a2471e389&leagues=5a3a2076b18c6d2a2471e38a&leagues=5a54332afed0441d7ca58698&leagues=5a3a20bcb18c6d2a2471e38b&leagues=5a4b21a3fc6037049878b388&leagues=5a421b7766b59d17f0f3e74c&leagues=5a3b857eb020152bbce0a829&leagues=5a3c8129b936963ee894de00&leagues=5a3221fe9263772950a80636&leagues=5a321f569263772950a80634&leagues=5a24b2183a809ba7d4335f5b&leagues=5a20dcb9f82d48a2a095556f&leagues=5a3caaa9b936963ee894de06&leagues=5a1e725e832921bff0e82575&leagues=5a1e758a832921bff0e82579&leagues=5a1e74dc832921bff0e82578&leagues=5a1e7455832921bff0e82577&leagues=5a1e73ab832921bff0e82576&leagues=5a63346042fc4d599871815d&leagues=null&page=1&state=finish> put url_queue success!
+2019-04-09 17:07:20,704 - web_dota2_score.py[line:39] - INFO: <http://www.1zplay.com/api/schedules?category=dota2&leagues=5c864ec22fd72b55d45bec79&leagues=5c7fc2732fd72b55d45bec16&leagues=5c7f0a572fd72b55d45bec0d&leagues=5c6df5352fd72b55d45beba7&leagues=5c7524b32fd72b55d45bebb9&leagues=5c7510472fd72b55d45bebb3&leagues=5c2b8ea543f6b0500d93cd28&leagues=5c2b8fd343f6b0500d93cd29&leagues=5c4d31252fd72b55d45bea97&leagues=5c2b8ccd43f6b0500d93cd27&leagues=5c2b89ae43f6b0500d93cd26&leagues=5c34228543f6b0500d93cd5d&leagues=5c2b93fb43f6b0500d93cd2e&leagues=5c29993d43f6b0500d93cd23&leagues=5c22f00943f6b0500d93ccf9&leagues=5c206e2143f6b0500d93cce6&leagues=5c1db3e743f6b0500d93ccdf&leagues=5c18bb5643f6b0500d93cccd&leagues=5c11ec1b43f6b0500d93ccb9&leagues=5c109c7b43f6b0500d93cca4&leagues=5c0bb60943f6b0500d93cc8a&leagues=5c035fa543f6b0500d93cc03&leagues=5bf7e3d343f6b0500d93cb5d&leagues=5bf5345c43f6b0500d93cb48&leagues=5beb049d43f6b0500d93cafd&leagues=5bf3999243f6b0500d93cb22&leagues=5be3ab4e43f6b0500d93caed&leagues=5bd6610f43f6b0500d93cabf&leagues=5be3763643f6b0500d93cae9&leagues=5bccb6bb4df3e6586392220a&leagues=5bce485d94d802261e19d1a0&leagues=5bc7be1b4df3e658639221d5&leagues=5bc457274df3e65863922199&leagues=5bc29ce74df3e65863922183&leagues=5bbd654d4df3e65863922175&leagues=5bba67314df3e65863922168&leagues=5bc4d14d4df3e658639221bb&leagues=5bb280364df3e65863922137&leagues=5bb19d567f54e1073e225d53&leagues=5bac55f87f54e1073e225cdb&leagues=5bac53d87f54e1073e225cda&leagues=5bae48f47f54e1073e225d05&leagues=5ba846eb7f54e1073e225cbb&leagues=5b9a15dfce11f15aa1c4242a&leagues=5b8d3a87ce11f15aa1c42418&leagues=5b557e1e5b7fbe042094b9fa&leagues=5b63ee6c3cc11326453526f5&leagues=5b62b9473cc11326453526f0&leagues=5b52e6135b7fbe042094b9f5&leagues=5b3cc75914f6b42a273bb6a6&leagues=5b35fa8014f6b42a273bb689&leagues=5b2728267eec3c4f6a380484&leagues=5b03d5f086b7d72865fe5aa7&leagues=5af6e3ce86b7d72865fe5a5d&leagues=5adcadd3ef81f73dd1744154&leagues=5aef2c5def81f73dd17441af&leagues=5a85b4db92abd971ffdb028b&leagues=5ad5e38eef81f73dd17440ed&leagues=5ad412802461157a983c4f36&leagues=5ac496512461157a983c4eeb&leagues=5ac98c012461157a983c4f10&leagues=5a85b73592abd971ffdb0291&leagues=5a85b0b192abd971ffdb0284&leagues=5aafc89ae6aa9371f2dba5ec&leagues=5a85b5c192abd971ffdb028c&leagues=5aa92d51c6854126efc08866&leagues=5aa6a4f8a08c69431b78a2a7&leagues=5a94c47c8f736d6cc624ed78&leagues=5aa5ffbba08c69431b78a2a5&leagues=5a85b86892abd971ffdb0292&leagues=5a9a0ea5181e6c31c29a0262&leagues=5a97caf59ae79f6cddd8c4bc&leagues=5a38e519f75edf444c5af963&leagues=5a7e68a90828146fe8a40390&leagues=5a5d66a169a0744a0ce16180&leagues=5a66bd82f80e3b5cfcb0d46b&leagues=5a66bfd6f80e3b5cfcb0d474&leagues=5a3a1f98b18c6d2a2471e388&leagues=5a3a2008b18c6d2a2471e389&leagues=5a3a2076b18c6d2a2471e38a&leagues=5a54332afed0441d7ca58698&leagues=5a3a20bcb18c6d2a2471e38b&leagues=5a4b21a3fc6037049878b388&leagues=5a421b7766b59d17f0f3e74c&leagues=5a3b857eb020152bbce0a829&leagues=5a3c8129b936963ee894de00&leagues=5a3221fe9263772950a80636&leagues=5a321f569263772950a80634&leagues=5a24b2183a809ba7d4335f5b&leagues=5a20dcb9f82d48a2a095556f&leagues=5a3caaa9b936963ee894de06&leagues=5a1e725e832921bff0e82575&leagues=5a1e758a832921bff0e82579&leagues=5a1e74dc832921bff0e82578&leagues=5a1e7455832921bff0e82577&leagues=5a1e73ab832921bff0e82576&leagues=5a63346042fc4d599871815d&leagues=null&page=2&state=finish> put url_queue success!
+2019-04-09 17:07:20,705 - web_dota2_score.py[line:39] - INFO: <http://www.1zplay.com/api/schedules?category=dota2&leagues=5c864ec22fd72b55d45bec79&leagues=5c7fc2732fd72b55d45bec16&leagues=5c7f0a572fd72b55d45bec0d&leagues=5c6df5352fd72b55d45beba7&leagues=5c7524b32fd72b55d45bebb9&leagues=5c7510472fd72b55d45bebb3&leagues=5c2b8ea543f6b0500d93cd28&leagues=5c2b8fd343f6b0500d93cd29&leagues=5c4d31252fd72b55d45bea97&leagues=5c2b8ccd43f6b0500d93cd27&leagues=5c2b89ae43f6b0500d93cd26&leagues=5c34228543f6b0500d93cd5d&leagues=5c2b93fb43f6b0500d93cd2e&leagues=5c29993d43f6b0500d93cd23&leagues=5c22f00943f6b0500d93ccf9&leagues=5c206e2143f6b0500d93cce6&leagues=5c1db3e743f6b0500d93ccdf&leagues=5c18bb5643f6b0500d93cccd&leagues=5c11ec1b43f6b0500d93ccb9&leagues=5c109c7b43f6b0500d93cca4&leagues=5c0bb60943f6b0500d93cc8a&leagues=5c035fa543f6b0500d93cc03&leagues=5bf7e3d343f6b0500d93cb5d&leagues=5bf5345c43f6b0500d93cb48&leagues=5beb049d43f6b0500d93cafd&leagues=5bf3999243f6b0500d93cb22&leagues=5be3ab4e43f6b0500d93caed&leagues=5bd6610f43f6b0500d93cabf&leagues=5be3763643f6b0500d93cae9&leagues=5bccb6bb4df3e6586392220a&leagues=5bce485d94d802261e19d1a0&leagues=5bc7be1b4df3e658639221d5&leagues=5bc457274df3e65863922199&leagues=5bc29ce74df3e65863922183&leagues=5bbd654d4df3e65863922175&leagues=5bba67314df3e65863922168&leagues=5bc4d14d4df3e658639221bb&leagues=5bb280364df3e65863922137&leagues=5bb19d567f54e1073e225d53&leagues=5bac55f87f54e1073e225cdb&leagues=5bac53d87f54e1073e225cda&leagues=5bae48f47f54e1073e225d05&leagues=5ba846eb7f54e1073e225cbb&leagues=5b9a15dfce11f15aa1c4242a&leagues=5b8d3a87ce11f15aa1c42418&leagues=5b557e1e5b7fbe042094b9fa&leagues=5b63ee6c3cc11326453526f5&leagues=5b62b9473cc11326453526f0&leagues=5b52e6135b7fbe042094b9f5&leagues=5b3cc75914f6b42a273bb6a6&leagues=5b35fa8014f6b42a273bb689&leagues=5b2728267eec3c4f6a380484&leagues=5b03d5f086b7d72865fe5aa7&leagues=5af6e3ce86b7d72865fe5a5d&leagues=5adcadd3ef81f73dd1744154&leagues=5aef2c5def81f73dd17441af&leagues=5a85b4db92abd971ffdb028b&leagues=5ad5e38eef81f73dd17440ed&leagues=5ad412802461157a983c4f36&leagues=5ac496512461157a983c4eeb&leagues=5ac98c012461157a983c4f10&leagues=5a85b73592abd971ffdb0291&leagues=5a85b0b192abd971ffdb0284&leagues=5aafc89ae6aa9371f2dba5ec&leagues=5a85b5c192abd971ffdb028c&leagues=5aa92d51c6854126efc08866&leagues=5aa6a4f8a08c69431b78a2a7&leagues=5a94c47c8f736d6cc624ed78&leagues=5aa5ffbba08c69431b78a2a5&leagues=5a85b86892abd971ffdb0292&leagues=5a9a0ea5181e6c31c29a0262&leagues=5a97caf59ae79f6cddd8c4bc&leagues=5a38e519f75edf444c5af963&leagues=5a7e68a90828146fe8a40390&leagues=5a5d66a169a0744a0ce16180&leagues=5a66bd82f80e3b5cfcb0d46b&leagues=5a66bfd6f80e3b5cfcb0d474&leagues=5a3a1f98b18c6d2a2471e388&leagues=5a3a2008b18c6d2a2471e389&leagues=5a3a2076b18c6d2a2471e38a&leagues=5a54332afed0441d7ca58698&leagues=5a3a20bcb18c6d2a2471e38b&leagues=5a4b21a3fc6037049878b388&leagues=5a421b7766b59d17f0f3e74c&leagues=5a3b857eb020152bbce0a829&leagues=5a3c8129b936963ee894de00&leagues=5a3221fe9263772950a80636&leagues=5a321f569263772950a80634&leagues=5a24b2183a809ba7d4335f5b&leagues=5a20dcb9f82d48a2a095556f&leagues=5a3caaa9b936963ee894de06&leagues=5a1e725e832921bff0e82575&leagues=5a1e758a832921bff0e82579&leagues=5a1e74dc832921bff0e82578&leagues=5a1e7455832921bff0e82577&leagues=5a1e73ab832921bff0e82576&leagues=5a63346042fc4d599871815d&leagues=null&page=3&state=finish> put url_queue success!
+2019-04-09 17:07:20,705 - web_dota2_score.py[line:39] - INFO: <http://www.1zplay.com/api/schedules?category=dota2&leagues=5c864ec22fd72b55d45bec79&leagues=5c7fc2732fd72b55d45bec16&leagues=5c7f0a572fd72b55d45bec0d&leagues=5c6df5352fd72b55d45beba7&leagues=5c7524b32fd72b55d45bebb9&leagues=5c7510472fd72b55d45bebb3&leagues=5c2b8ea543f6b0500d93cd28&leagues=5c2b8fd343f6b0500d93cd29&leagues=5c4d31252fd72b55d45bea97&leagues=5c2b8ccd43f6b0500d93cd27&leagues=5c2b89ae43f6b0500d93cd26&leagues=5c34228543f6b0500d93cd5d&leagues=5c2b93fb43f6b0500d93cd2e&leagues=5c29993d43f6b0500d93cd23&leagues=5c22f00943f6b0500d93ccf9&leagues=5c206e2143f6b0500d93cce6&leagues=5c1db3e743f6b0500d93ccdf&leagues=5c18bb5643f6b0500d93cccd&leagues=5c11ec1b43f6b0500d93ccb9&leagues=5c109c7b43f6b0500d93cca4&leagues=5c0bb60943f6b0500d93cc8a&leagues=5c035fa543f6b0500d93cc03&leagues=5bf7e3d343f6b0500d93cb5d&leagues=5bf5345c43f6b0500d93cb48&leagues=5beb049d43f6b0500d93cafd&leagues=5bf3999243f6b0500d93cb22&leagues=5be3ab4e43f6b0500d93caed&leagues=5bd6610f43f6b0500d93cabf&leagues=5be3763643f6b0500d93cae9&leagues=5bccb6bb4df3e6586392220a&leagues=5bce485d94d802261e19d1a0&leagues=5bc7be1b4df3e658639221d5&leagues=5bc457274df3e65863922199&leagues=5bc29ce74df3e65863922183&leagues=5bbd654d4df3e65863922175&leagues=5bba67314df3e65863922168&leagues=5bc4d14d4df3e658639221bb&leagues=5bb280364df3e65863922137&leagues=5bb19d567f54e1073e225d53&leagues=5bac55f87f54e1073e225cdb&leagues=5bac53d87f54e1073e225cda&leagues=5bae48f47f54e1073e225d05&leagues=5ba846eb7f54e1073e225cbb&leagues=5b9a15dfce11f15aa1c4242a&leagues=5b8d3a87ce11f15aa1c42418&leagues=5b557e1e5b7fbe042094b9fa&leagues=5b63ee6c3cc11326453526f5&leagues=5b62b9473cc11326453526f0&leagues=5b52e6135b7fbe042094b9f5&leagues=5b3cc75914f6b42a273bb6a6&leagues=5b35fa8014f6b42a273bb689&leagues=5b2728267eec3c4f6a380484&leagues=5b03d5f086b7d72865fe5aa7&leagues=5af6e3ce86b7d72865fe5a5d&leagues=5adcadd3ef81f73dd1744154&leagues=5aef2c5def81f73dd17441af&leagues=5a85b4db92abd971ffdb028b&leagues=5ad5e38eef81f73dd17440ed&leagues=5ad412802461157a983c4f36&leagues=5ac496512461157a983c4eeb&leagues=5ac98c012461157a983c4f10&leagues=5a85b73592abd971ffdb0291&leagues=5a85b0b192abd971ffdb0284&leagues=5aafc89ae6aa9371f2dba5ec&leagues=5a85b5c192abd971ffdb028c&leagues=5aa92d51c6854126efc08866&leagues=5aa6a4f8a08c69431b78a2a7&leagues=5a94c47c8f736d6cc624ed78&leagues=5aa5ffbba08c69431b78a2a5&leagues=5a85b86892abd971ffdb0292&leagues=5a9a0ea5181e6c31c29a0262&leagues=5a97caf59ae79f6cddd8c4bc&leagues=5a38e519f75edf444c5af963&leagues=5a7e68a90828146fe8a40390&leagues=5a5d66a169a0744a0ce16180&leagues=5a66bd82f80e3b5cfcb0d46b&leagues=5a66bfd6f80e3b5cfcb0d474&leagues=5a3a1f98b18c6d2a2471e388&leagues=5a3a2008b18c6d2a2471e389&leagues=5a3a2076b18c6d2a2471e38a&leagues=5a54332afed0441d7ca58698&leagues=5a3a20bcb18c6d2a2471e38b&leagues=5a4b21a3fc6037049878b388&leagues=5a421b7766b59d17f0f3e74c&leagues=5a3b857eb020152bbce0a829&leagues=5a3c8129b936963ee894de00&leagues=5a3221fe9263772950a80636&leagues=5a321f569263772950a80634&leagues=5a24b2183a809ba7d4335f5b&leagues=5a20dcb9f82d48a2a095556f&leagues=5a3caaa9b936963ee894de06&leagues=5a1e725e832921bff0e82575&leagues=5a1e758a832921bff0e82579&leagues=5a1e74dc832921bff0e82578&leagues=5a1e7455832921bff0e82577&leagues=5a1e73ab832921bff0e82576&leagues=5a63346042fc4d599871815d&leagues=null&page=4&state=finish> put url_queue success!
+2019-04-09 17:07:21,001 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:07:25,474 - web_dota2_score.py[line:196] - INFO: detail data <4631463128> save success!
+2019-04-09 17:07:26,783 - web_dota2_score.py[line:196] - INFO: detail data <4631640965> save success!
+2019-04-09 17:07:26,783 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:07:27,820 - web_dota2_score.py[line:196] - INFO: detail data <4631286513> save success!
+2019-04-09 17:07:29,108 - web_dota2_score.py[line:196] - INFO: detail data <4631391840> save success!
+2019-04-09 17:07:30,206 - web_dota2_score.py[line:196] - INFO: detail data <4631529068> save success!
+2019-04-09 17:07:30,206 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:07:31,585 - web_dota2_score.py[line:196] - INFO: detail data <4631174067> save success!
+2019-04-09 17:07:33,241 - web_dota2_score.py[line:196] - INFO: detail data <4631286965> save success!
+2019-04-09 17:07:33,241 - web_dota2_score.py[line:126] - INFO: list data <Qi Invitational Americas> save success!
+2019-04-09 17:07:34,424 - web_dota2_score.py[line:196] - INFO: detail data <4630689935> save success!
+2019-04-09 17:07:36,546 - web_dota2_score.py[line:196] - INFO: detail data <4630744393> save success!
+2019-04-09 17:07:38,324 - web_dota2_score.py[line:196] - INFO: detail data <4630804863> save success!
+2019-04-09 17:07:38,324 - web_dota2_score.py[line:126] - INFO: list data <Birmingham Invitational> save success!
+2019-04-09 17:07:39,551 - web_dota2_score.py[line:196] - INFO: detail data <4630285361> save success!
+2019-04-09 17:07:39,552 - web_dota2_score.py[line:126] - INFO: list data <Birmingham Invitational> save success!
+2019-04-09 17:07:41,188 - web_dota2_score.py[line:196] - INFO: detail data <4630113167> save success!
+2019-04-09 17:07:41,188 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:07:42,522 - web_dota2_score.py[line:196] - INFO: detail data <4630036047> save success!
+2019-04-09 17:07:43,788 - web_dota2_score.py[line:196] - INFO: detail data <4630187516> save success!
+2019-04-09 17:07:43,789 - web_dota2_score.py[line:126] - INFO: list data <Birmingham Invitational> save success!
+2019-04-09 17:07:46,066 - web_dota2_score.py[line:196] - INFO: detail data <4629865510> save success!
+2019-04-09 17:07:46,066 - web_dota2_score.py[line:126] - INFO: list data <Birmingham Invitational> save success!
+2019-04-09 17:07:47,400 - web_dota2_score.py[line:196] - INFO: detail data <4629448324> save success!
+2019-04-09 17:07:47,400 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:07:48,690 - web_dota2_score.py[line:196] - INFO: detail data <4628331500> save success!
+2019-04-09 17:07:49,898 - web_dota2_score.py[line:196] - INFO: detail data <4628539172> save success!
+2019-04-09 17:07:49,899 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:07:51,212 - web_dota2_score.py[line:196] - INFO: detail data <4628080711> save success!
+2019-04-09 17:07:52,525 - web_dota2_score.py[line:196] - INFO: detail data <4628286508> save success!
+2019-04-09 17:07:52,525 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:07:54,075 - web_dota2_score.py[line:196] - INFO: detail data <4627695736> save success!
+2019-04-09 17:07:55,937 - web_dota2_score.py[line:196] - INFO: detail data <4627850702> save success!
+2019-04-09 17:07:55,937 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:07:57,155 - web_dota2_score.py[line:196] - INFO: detail data <4627678985> save success!
+2019-04-09 17:07:58,366 - web_dota2_score.py[line:196] - INFO: detail data <4627797557> save success!
+2019-04-09 17:07:59,558 - web_dota2_score.py[line:196] - INFO: detail data <4628034651> save success!
+2019-04-09 17:07:59,559 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:02,254 - web_dota2_score.py[line:196] - INFO: detail data <4627376589> save success!
+2019-04-09 17:08:03,547 - web_dota2_score.py[line:196] - INFO: detail data <4627509561> save success!
+2019-04-09 17:08:03,547 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:04,655 - web_dota2_score.py[line:196] - INFO: detail data <4627266769> save success!
+2019-04-09 17:08:05,951 - web_dota2_score.py[line:196] - INFO: detail data <4627357788> save success!
+2019-04-09 17:08:05,951 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:07,218 - web_dota2_score.py[line:196] - INFO: detail data <4627033865> save success!
+2019-04-09 17:08:08,522 - web_dota2_score.py[line:196] - INFO: detail data <4627129272> save success!
+2019-04-09 17:08:08,523 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:09,653 - web_dota2_score.py[line:196] - INFO: detail data <4626422027> save success!
+2019-04-09 17:08:13,861 - web_dota2_score.py[line:196] - INFO: detail data <4626522990> save success!
+2019-04-09 17:08:13,862 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:15,449 - web_dota2_score.py[line:196] - INFO: detail data <4626116423> save success!
+2019-04-09 17:08:16,729 - web_dota2_score.py[line:196] - INFO: detail data <4626271153> save success!
+2019-04-09 17:08:16,729 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:18,077 - web_dota2_score.py[line:196] - INFO: detail data <4624337382> save success!
+2019-04-09 17:08:19,477 - web_dota2_score.py[line:196] - INFO: detail data <4624957904> save success!
+2019-04-09 17:08:19,478 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:20,741 - web_dota2_score.py[line:196] - INFO: detail data <4623893036> save success!
+2019-04-09 17:08:21,878 - web_dota2_score.py[line:196] - INFO: detail data <4624097813> save success!
+2019-04-09 17:08:21,878 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:23,211 - web_dota2_score.py[line:196] - INFO: detail data <4623739344> save success!
+2019-04-09 17:08:24,396 - web_dota2_score.py[line:196] - INFO: detail data <4624208453> save success!
+2019-04-09 17:08:24,397 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:25,696 - web_dota2_score.py[line:196] - INFO: detail data <4622697650> save success!
+2019-04-09 17:08:26,903 - web_dota2_score.py[line:196] - INFO: detail data <4622451777> save success!
+2019-04-09 17:08:26,903 - web_dota2_score.py[line:126] - INFO: list data <ESL ANZ S3 League> save success!
+2019-04-09 17:08:32,380 - web_dota2_score.py[line:196] - INFO: detail data <4622686934> save success!
+2019-04-09 17:08:33,623 - web_dota2_score.py[line:196] - INFO: detail data <4623060124> save success!
+2019-04-09 17:08:33,624 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:34,989 - web_dota2_score.py[line:196] - INFO: detail data <4622690559> save success!
+2019-04-09 17:08:36,190 - web_dota2_score.py[line:196] - INFO: detail data <4623619383> save success!
+2019-04-09 17:08:36,190 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:37,410 - web_dota2_score.py[line:196] - INFO: detail data <4622355897> save success!
+2019-04-09 17:08:38,478 - web_dota2_score.py[line:196] - INFO: detail data <4622641483> save success!
+2019-04-09 17:08:38,479 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:08:40,971 - web_dota2_score.py[line:196] - INFO: detail data <4622236065> save success!
+2019-04-09 17:08:42,554 - web_dota2_score.py[line:196] - INFO: detail data <4622411248> save success!
+2019-04-09 17:08:42,554 - web_dota2_score.py[line:126] - INFO: list data <> save success!
+2019-04-09 17:08:43,718 - web_dota2_score.py[line:196] - INFO: detail data <4621716095> save success!
+2019-04-09 17:08:45,907 - web_dota2_score.py[line:196] - INFO: detail data <4621790031> save success!
+2019-04-09 17:08:45,908 - web_dota2_score.py[line:126] - INFO: list data <Qi美洲邀请赛> save success!
+2019-04-09 17:08:47,437 - web_dota2_score.py[line:196] - INFO: detail data <4621546749> save success!
+2019-04-09 17:08:47,437 - web_dota2_score.py[line:126] - INFO: list data <Qi美洲邀请赛> save success!
+2019-04-09 17:08:48,727 - web_dota2_score.py[line:196] - INFO: detail data <4621444038> save success!
+2019-04-09 17:08:48,727 - web_dota2_score.py[line:126] - INFO: list data <Qi美洲邀请赛> save success!
+2019-04-09 17:08:51,017 - web_dota2_score.py[line:196] - INFO: detail data <4621277332> save success!
+2019-04-09 17:08:51,018 - web_dota2_score.py[line:126] - INFO: list data <Qi美洲邀请赛> save success!
+2019-04-09 17:08:52,327 - web_dota2_score.py[line:196] - INFO: detail data <4621277523> save success!
+2019-04-09 17:08:52,327 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:08:53,955 - web_dota2_score.py[line:196] - INFO: detail data <4621294516> save success!
+2019-04-09 17:08:55,278 - web_dota2_score.py[line:196] - INFO: detail data <4621529110> save success!
+2019-04-09 17:08:55,279 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:08:56,607 - web_dota2_score.py[line:196] - INFO: detail data <4620644681> save success!
+2019-04-09 17:08:56,608 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:08:58,232 - web_dota2_score.py[line:196] - INFO: detail data <4620576532> save success!
+2019-04-09 17:08:59,458 - web_dota2_score.py[line:196] - INFO: detail data <4620947704> save success!
+2019-04-09 17:08:59,458 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:00,511 - web_dota2_score.py[line:196] - INFO: detail data <4620500927> save success!
+2019-04-09 17:09:00,512 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:01,676 - web_dota2_score.py[line:196] - INFO: detail data <4620129094> save success!
+2019-04-09 17:09:01,677 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:03,074 - web_dota2_score.py[line:196] - INFO: detail data <4620143795> save success!
+2019-04-09 17:09:03,074 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:04,672 - web_dota2_score.py[line:196] - INFO: detail data <4619544156> save success!
+2019-04-09 17:09:04,672 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:07,013 - web_dota2_score.py[line:196] - INFO: detail data <4619529863> save success!
+2019-04-09 17:09:07,014 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:09:08,494 - web_dota2_score.py[line:196] - INFO: detail data <4619005914> save success!
+2019-04-09 17:09:09,700 - web_dota2_score.py[line:196] - INFO: detail data <4619255726> save success!
+2019-04-09 17:09:09,701 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:11,008 - web_dota2_score.py[line:196] - INFO: detail data <4618746514> save success!
+2019-04-09 17:09:12,524 - web_dota2_score.py[line:196] - INFO: detail data <4619061121> save success!
+2019-04-09 17:09:12,524 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:09:14,232 - web_dota2_score.py[line:196] - INFO: detail data <4618332291> save success!
+2019-04-09 17:09:17,691 - web_dota2_score.py[line:196] - INFO: detail data <4618596551> save success!
+2019-04-09 17:09:17,691 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:18,885 - web_dota2_score.py[line:196] - INFO: detail data <4617880283> save success!
+2019-04-09 17:09:21,115 - web_dota2_score.py[line:196] - INFO: detail data <4618181536> save success!
+2019-04-09 17:09:21,115 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:22,304 - web_dota2_score.py[line:196] - INFO: detail data <4617857416> save success!
+2019-04-09 17:09:25,229 - web_dota2_score.py[line:196] - INFO: detail data <4618201182> save success!
+2019-04-09 17:09:25,229 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:09:27,738 - web_dota2_score.py[line:196] - INFO: detail data <4617762383> save success!
+2019-04-09 17:09:28,745 - web_dota2_score.py[line:196] - INFO: detail data <4618012402> save success!
+2019-04-09 17:09:28,745 - web_dota2_score.py[line:126] - INFO: list data <挑战杯 第三赛季> save success!
+2019-04-09 17:09:29,863 - web_dota2_score.py[line:196] - INFO: detail data <4617496257> save success!
+2019-04-09 17:09:31,100 - web_dota2_score.py[line:196] - INFO: detail data <4617653654> save success!
+2019-04-09 17:09:32,521 - web_dota2_score.py[line:196] - INFO: detail data <4617850812> save success!
+2019-04-09 17:09:32,521 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:09:33,751 - web_dota2_score.py[line:196] - INFO: detail data <4617228077> save success!
+2019-04-09 17:09:35,275 - web_dota2_score.py[line:196] - INFO: detail data <4617405300> save success!
+2019-04-09 17:09:35,276 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:36,606 - web_dota2_score.py[line:196] - INFO: detail data <4616681644> save success!
+2019-04-09 17:09:38,711 - web_dota2_score.py[line:196] - INFO: detail data <4616493650> save success!
+2019-04-09 17:09:39,817 - web_dota2_score.py[line:196] - INFO: detail data <4616571962> save success!
+2019-04-09 17:09:39,817 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:41,780 - web_dota2_score.py[line:196] - INFO: detail data <4616315228> save success!
+2019-04-09 17:09:43,097 - web_dota2_score.py[line:196] - INFO: detail data <4616413426> save success!
+2019-04-09 17:09:43,097 - web_dota2_score.py[line:126] - INFO: list data <American Avengers Cup> save success!
+2019-04-09 17:09:46,189 - middlewares.py[line:74] - WARNING: <http://www.1zplay.com/api/dota2_match/4616260151> retry 1 times
+2019-04-09 17:09:46,189 - middlewares.py[line:75] - ERROR: <http://www.1zplay.com/api/dota2_match/4616260151> get response failed.
+2019-04-09 17:09:47,455 - web_dota2_score.py[line:196] - INFO: detail data <4616260151> save success!
+2019-04-09 17:09:47,455 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:48,891 - web_dota2_score.py[line:196] - INFO: detail data <4615972080> save success!
+2019-04-09 17:09:50,061 - web_dota2_score.py[line:196] - INFO: detail data <4616116656> save success!
+2019-04-09 17:09:50,061 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:51,320 - web_dota2_score.py[line:196] - INFO: detail data <4616011678> save success!
+2019-04-09 17:09:52,646 - web_dota2_score.py[line:196] - INFO: detail data <4616254576> save success!
+2019-04-09 17:09:52,646 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:53,837 - web_dota2_score.py[line:196] - INFO: detail data <4615974691> save success!
+2019-04-09 17:09:54,952 - web_dota2_score.py[line:196] - INFO: detail data <4616123967> save success!
+2019-04-09 17:09:54,953 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:09:57,075 - web_dota2_score.py[line:196] - INFO: detail data <4614907193> save success!
+2019-04-09 17:09:58,223 - web_dota2_score.py[line:196] - INFO: detail data <4615235659> save success!
+2019-04-09 17:10:00,549 - web_dota2_score.py[line:196] - INFO: detail data <4615601930> save success!
+2019-04-09 17:10:00,549 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:01,907 - web_dota2_score.py[line:196] - INFO: detail data <4614863215> save success!
+2019-04-09 17:10:03,323 - web_dota2_score.py[line:196] - INFO: detail data <4615283980> save success!
+2019-04-09 17:10:03,324 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:05,710 - web_dota2_score.py[line:196] - INFO: detail data <4614934626> save success!
+2019-04-09 17:10:07,139 - web_dota2_score.py[line:196] - INFO: detail data <4615321025> save success!
+2019-04-09 17:10:08,351 - web_dota2_score.py[line:196] - INFO: detail data <4615631733> save success!
+2019-04-09 17:10:08,351 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:09,833 - web_dota2_score.py[line:196] - INFO: detail data <4614927608> save success!
+2019-04-09 17:10:12,916 - web_dota2_score.py[line:196] - INFO: detail data <4615268272> save success!
+2019-04-09 17:10:14,011 - web_dota2_score.py[line:196] - INFO: detail data <4615709639> save success!
+2019-04-09 17:10:14,012 - web_dota2_score.py[line:126] - INFO: list data <The Challenge Cup S3> save success!
+2019-04-09 17:10:15,486 - web_dota2_score.py[line:196] - INFO: detail data <4613981759> save success!
+2019-04-09 17:10:16,884 - web_dota2_score.py[line:196] - INFO: detail data <4614168690> save success!
+2019-04-09 17:10:16,884 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:18,023 - web_dota2_score.py[line:196] - INFO: detail data <4613932404> save success!
+2019-04-09 17:10:19,343 - web_dota2_score.py[line:196] - INFO: detail data <4614281533> save success!
+2019-04-09 17:10:19,343 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:20,752 - web_dota2_score.py[line:196] - INFO: detail data <4613854727> save success!
+2019-04-09 17:10:22,881 - web_dota2_score.py[line:196] - INFO: detail data <4614084371> save success!
+2019-04-09 17:10:22,882 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:10:24,100 - web_dota2_score.py[line:196] - INFO: detail data <4613692657> save success!
+2019-04-09 17:10:25,218 - web_dota2_score.py[line:196] - INFO: detail data <4613857791> save success!
+2019-04-09 17:10:25,218 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:26,773 - web_dota2_score.py[line:196] - INFO: detail data <4613556323> save success!
+2019-04-09 17:10:28,128 - web_dota2_score.py[line:196] - INFO: detail data <4613775273> save success!
+2019-04-09 17:10:28,128 - web_dota2_score.py[line:126] - INFO: list data <OGA Dota PIT Minor 2019> save success!
+2019-04-09 17:10:29,305 - web_dota2_score.py[line:196] - INFO: detail data <4613447677> save success!
+2019-04-09 17:10:31,139 - web_dota2_score.py[line:196] - INFO: detail data <4613620150> save success!
+2019-04-09 17:10:31,139 - web_dota2_score.py[line:126] - INFO: list data <CHINA FUTURE CUP> save success!
+2019-04-09 17:10:33,593 - web_dota2_score.py[line:196] - INFO: detail data <4613223647> save success!
+2019-04-09 17:10:35,226 - web_dota2_score.py[line:196] - INFO: detail data <4613414041> save success!
