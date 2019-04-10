@@ -21,10 +21,10 @@ class NormalStatsCollector(object):
 
         # 初始化收集数据的字典
         self.dict_collector = {
-            self.request_nums_key :0,
-            self.response_nums_key:0,
-            self.repeat_request_nums_key:0,
-            self.start_request_nums_key:0
+            self.request_nums_key: 0,
+            self.response_nums_key: 0,
+            self.repeat_request_nums_key: 0,
+            self.start_request_nums_key: 0
         }
 
     def incr(self, key):
@@ -57,7 +57,7 @@ class NormalStatsCollector(object):
         return self.get(self.start_request_nums_key)
 
 
-class ReidsStatsCollector(object):
+class RedisStatsCollector(object):
 
     def __init__(self, spider_names=[],
                  host=MY_HOST, port=REDIS_PORT,

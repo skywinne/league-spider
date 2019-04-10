@@ -54,4 +54,4 @@ class RedisFilterContainer(BaseFilterContainer):
 
     def exists(self, fp):
         """判断指纹是否在去重容器中"""
-        return self._redis.sismember(self._name, fp) # 存在返回1 不存在返回0
+        return self._redis.sismember(self._name, fp)  # 存在返回1 不存在返回0

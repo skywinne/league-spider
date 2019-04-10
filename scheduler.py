@@ -20,14 +20,16 @@ class Scheduler(object):
     缓存请求对象(Request)，并为下载器提供请求对象，实现请求的调度：
     对请求对象进行去重判断：实现去重方法_filter_request，该方法对内提供，因此设置为私有方法
     """
-    def __init__(self):
+    def __init__(self, name, collector):
         if SCHEDULER_PERSIST:  # 如果使用分布式或者是持久化，使用redis的队列
-            self.queue = RedisQueue()
+            self.queue = RedisQueue(name=name)
             self._filter_container = RedisFilterContainer()  # 使用redis作为python的去重的容器
         else:
             self.queue = Queue()
             self._filter_container = NoramlFilterContainer()  # 使用Python的set()集合
-        self.repeate_request_num = 0  # 统计重复的数量
+        # 统计重复的数量
+        self.collector = collector
+        # self.repeate_request_num = 0
         # 在engine中阻塞的位置判断程序结束的条件：成功的响应数+重复的数量>=总的请求数量
         # self._filter_container = set() # 去重容器,是一个集合,存储已经发过的请求的特征 url
 
@@ -60,13 +62,13 @@ class Scheduler(object):
     def _filter_request(self, url):
         """对数据进行去重"""
         fp = self._gen_fp(url)  # 给request对象增加一个fp指纹属性
-        print(fp)
         if not self._filter_container.exists(fp):
             # 此处修改
             self._filter_container.add_fp(fp)  # 向指纹容器集合添加一个指纹
             return True
         else:
-            self.repeate_request_num += 1
+            # self.repeate_request_num += 1
+            self.collector.incr(self.collector.repeat_request_nums_key)
             logger.info("发现重复的请求：<{}>".format(fp))
             print("发现重复的请求：<{}>".format(fp))
             return False

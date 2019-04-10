@@ -23,7 +23,7 @@ class RedisQueue(object):
     max_timeout = 0.3
 
     def __init__(self, maxsize=10000, name=REDIS_QUEUE_NAME, host=MY_HOST, port=REDIS_PORT, db=REDIS_DB,
-                lazy_limit=True, password=None):
+                 lazy_limit=True, password=None):
         """
         Constructor for RedisQueue
         maxsize:    an integer that sets the upperbound limit on the number of
@@ -58,7 +58,7 @@ class RedisQueue(object):
             pass
         elif self.full():
             raise self.Full
-        self.last_qsize = self.redis.rpush(self.name, pickle.dumps(obj)) # pickle.dumps(obj)把对象转换为二进制
+        self.last_qsize = self.redis.rpush(self.name, pickle.dumps(obj))  # pickle.dumps(obj)把对象转换为二进制
         return True
 
     def put(self, obj, block=True, timeout=None):
@@ -83,7 +83,7 @@ class RedisQueue(object):
         ret = self.redis.lpop(self.name)
         if ret is None:
             raise self.Empty
-        return pickle.loads(ret) # pickle.loads(ret)把二进制字符串转为对象 反序列化
+        return pickle.loads(ret)  # pickle.loads(ret)把二进制字符串转为对象 反序列化
 
     def get(self, block=True, timeout=None):
         if not block:
@@ -102,5 +102,4 @@ class RedisQueue(object):
                         raise
                 else:
                     time.sleep(self.max_timeout)
-
 

@@ -2,7 +2,7 @@
 PROXY_POOL_URL = 'http://47.107.158.70:5555/random'
 
 # 如果是False, 不使用redis队列，会使用python的set存储指纹和请求
-SCHEDULER_PERSIST = False
+SCHEDULER_PERSIST = True
 
 # 指纹是否持久化
 # 默认为True 即持久化请求对象的指纹,达到断点续爬的目的

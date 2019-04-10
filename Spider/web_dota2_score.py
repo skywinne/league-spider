@@ -13,29 +13,39 @@ import time
 from middlewares import Middlewares
 from scheduler import Scheduler
 from config import logger
+from stats_collector import NormalStatsCollector, RedisStatsCollector
+from constants import SCHEDULER_PERSIST
 
 
 class ScoreSpider(object):
     """比分列表页爬虫"""
     def __init__(self):
         """初始化参数"""
+        # 设置计数器，SCHEDULER_PERSIST位true时用Redis，否则用Python字典
+        if SCHEDULER_PERSIST:
+            self.collector = RedisStatsCollector()  # redis计数器
+        else:
+            self.collector = NormalStatsCollector()  # 字典计数器
         # 初始url
         self.url = "http://www.1zplay.com/api/schedules?category=dota2&leagues=5c864ec22fd72b55d45bec79&leagues=5c7fc2732fd72b55d45bec16&leagues=5c7f0a572fd72b55d45bec0d&leagues=5c6df5352fd72b55d45beba7&leagues=5c7524b32fd72b55d45bebb9&leagues=5c7510472fd72b55d45bebb3&leagues=5c2b8ea543f6b0500d93cd28&leagues=5c2b8fd343f6b0500d93cd29&leagues=5c4d31252fd72b55d45bea97&leagues=5c2b8ccd43f6b0500d93cd27&leagues=5c2b89ae43f6b0500d93cd26&leagues=5c34228543f6b0500d93cd5d&leagues=5c2b93fb43f6b0500d93cd2e&leagues=5c29993d43f6b0500d93cd23&leagues=5c22f00943f6b0500d93ccf9&leagues=5c206e2143f6b0500d93cce6&leagues=5c1db3e743f6b0500d93ccdf&leagues=5c18bb5643f6b0500d93cccd&leagues=5c11ec1b43f6b0500d93ccb9&leagues=5c109c7b43f6b0500d93cca4&leagues=5c0bb60943f6b0500d93cc8a&leagues=5c035fa543f6b0500d93cc03&leagues=5bf7e3d343f6b0500d93cb5d&leagues=5bf5345c43f6b0500d93cb48&leagues=5beb049d43f6b0500d93cafd&leagues=5bf3999243f6b0500d93cb22&leagues=5be3ab4e43f6b0500d93caed&leagues=5bd6610f43f6b0500d93cabf&leagues=5be3763643f6b0500d93cae9&leagues=5bccb6bb4df3e6586392220a&leagues=5bce485d94d802261e19d1a0&leagues=5bc7be1b4df3e658639221d5&leagues=5bc457274df3e65863922199&leagues=5bc29ce74df3e65863922183&leagues=5bbd654d4df3e65863922175&leagues=5bba67314df3e65863922168&leagues=5bc4d14d4df3e658639221bb&leagues=5bb280364df3e65863922137&leagues=5bb19d567f54e1073e225d53&leagues=5bac55f87f54e1073e225cdb&leagues=5bac53d87f54e1073e225cda&leagues=5bae48f47f54e1073e225d05&leagues=5ba846eb7f54e1073e225cbb&leagues=5b9a15dfce11f15aa1c4242a&leagues=5b8d3a87ce11f15aa1c42418&leagues=5b557e1e5b7fbe042094b9fa&leagues=5b63ee6c3cc11326453526f5&leagues=5b62b9473cc11326453526f0&leagues=5b52e6135b7fbe042094b9f5&leagues=5b3cc75914f6b42a273bb6a6&leagues=5b35fa8014f6b42a273bb689&leagues=5b2728267eec3c4f6a380484&leagues=5b03d5f086b7d72865fe5aa7&leagues=5af6e3ce86b7d72865fe5a5d&leagues=5adcadd3ef81f73dd1744154&leagues=5aef2c5def81f73dd17441af&leagues=5a85b4db92abd971ffdb028b&leagues=5ad5e38eef81f73dd17440ed&leagues=5ad412802461157a983c4f36&leagues=5ac496512461157a983c4eeb&leagues=5ac98c012461157a983c4f10&leagues=5a85b73592abd971ffdb0291&leagues=5a85b0b192abd971ffdb0284&leagues=5aafc89ae6aa9371f2dba5ec&leagues=5a85b5c192abd971ffdb028c&leagues=5aa92d51c6854126efc08866&leagues=5aa6a4f8a08c69431b78a2a7&leagues=5a94c47c8f736d6cc624ed78&leagues=5aa5ffbba08c69431b78a2a5&leagues=5a85b86892abd971ffdb0292&leagues=5a9a0ea5181e6c31c29a0262&leagues=5a97caf59ae79f6cddd8c4bc&leagues=5a38e519f75edf444c5af963&leagues=5a7e68a90828146fe8a40390&leagues=5a5d66a169a0744a0ce16180&leagues=5a66bd82f80e3b5cfcb0d46b&leagues=5a66bfd6f80e3b5cfcb0d474&leagues=5a3a1f98b18c6d2a2471e388&leagues=5a3a2008b18c6d2a2471e389&leagues=5a3a2076b18c6d2a2471e38a&leagues=5a54332afed0441d7ca58698&leagues=5a3a20bcb18c6d2a2471e38b&leagues=5a4b21a3fc6037049878b388&leagues=5a421b7766b59d17f0f3e74c&leagues=5a3b857eb020152bbce0a829&leagues=5a3c8129b936963ee894de00&leagues=5a3221fe9263772950a80636&leagues=5a321f569263772950a80634&leagues=5a24b2183a809ba7d4335f5b&leagues=5a20dcb9f82d48a2a095556f&leagues=5a3caaa9b936963ee894de06&leagues=5a1e725e832921bff0e82575&leagues=5a1e758a832921bff0e82579&leagues=5a1e74dc832921bff0e82578&leagues=5a1e7455832921bff0e82577&leagues=5a1e73ab832921bff0e82576&leagues=5a63346042fc4d599871815d&leagues=null&page={}&state=finish"
         # 初始化中间件
         self.middlewares = Middlewares()
         # 初始化四个队列
-        self.url_queue = Scheduler()
-        self.list_queue = Scheduler()
+        self.url_queue = Scheduler(name="dota2_url_queue", collector=self.collector)
+        self.list_queue = Scheduler(name="dota2_list_queue", collector=self.collector)
         # 初始化线程池
         self.pool = Pool(5)
         # 记录局数
         self.ju = 1
+        # 终止程序的条件
+        self.is_running = False
 
     def add_url_to_queue(self):
         """添加url进queue"""
         for url_count in range(1, 5):
             url = self.url.format(url_count)
             self.url_queue.add_request(url)
+            self.collector.incr(self.collector.request_nums_key)
             logger.info("<{}> put url_queue success!".format(url))
 
     def add_list_to_queue(self):
@@ -96,8 +106,12 @@ class ScoreSpider(object):
                     }
                 # 将list数据添加入list_queue
                 self.list_queue.add_data(list_data)
+                # 记录请求数量
+                self.collector.incr(self.collector.request_nums_key)
+            # 全部url全部取出
+            self.collector.incr(self.collector.response_nums_key)
             # 完成该url的任务
-            self.url_queue.task_done()
+            # self.url_queue.task_done()
 
     def get_battle(self, match_id, array):
         """获取阵容分析胜率"""
@@ -194,8 +208,10 @@ class ScoreSpider(object):
                 # 将数据存入json
                 self.save_content_to_json("dota2_score_detail", detail_datas)
                 logger.info("detail data <{}> save success!".format(detail_datas["detail_id"]))
+            # 记录完成的数量
+            self.collector.incr(self.collector.response_nums_key)
             # 列表数据任务已完成
-            self.list_queue.task_done()
+            # self.list_queue.task_done()
 
     def save_content_to_json(self, filename, datas):
         with open("../Data/" + filename + ".jsonlines", "a", encoding="utf-8") as f:
@@ -225,6 +241,27 @@ class ScoreSpider(object):
         time.sleep(5)
         self.url_queue.join()
         self.list_queue.join()
+
+    def error_callback(self, exception):
+        """异常回调函数"""
+        try:
+            raise exception  # 抛出异常后，才能被日志进行完整记录下来
+        except Exception as e:
+            logger.exception(e)
+
+    def call_list_back(self):
+        if self.is_running:
+            self.pool.apply_async(self.add_list_to_queue, callback=self.call_list_back, error_callback=self.error_callback)
+
+    def call_detail_back(self):
+        if self.is_running:
+            self.pool.apply_async(self.get_content_from_detail, callback=self.call_list_back, error_callback=self.error_callback)
+
+    def thread_task(self):
+        """使用递归式的多线程"""
+        self.pool.apply_async(self.add_url_to_queue, error_callback=self.error_callback)
+        self.pool.apply_async(self.add_list_to_queue, callback=self.call_list_back, error_callback=self.error_callback)
+        self.pool.apply_async(self.get_content_from_detail, callback=self.call_detail_back, error_callback=self.error_callback)
 
 
 if __name__ == '__main__':
